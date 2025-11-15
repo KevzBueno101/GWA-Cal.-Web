@@ -1,2 +1,3 @@
 *Visit the website*
->> gwac.vercel.app
+><a href="https://gwac.vercel.app" target="_blank">Visit the website</a>
+

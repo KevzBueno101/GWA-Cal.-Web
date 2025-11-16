@@ -67,7 +67,7 @@
     text-decoration: underline;
 }
 
-.hamburger {
+.hamburger {    
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -88,7 +88,7 @@
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         padding: .5rem;
         gap: 1rem;
@@ -106,6 +106,10 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+    }
+    .navbar ul li:hover{
+        background-color: rgba(95, 180, 95, 0.247);
+        color: white;
     }
 
     .navbar.open ul {

@@ -7,6 +7,19 @@
     --secondary-color: #043915;
 }
 
+/* Change selected text background to green and text color to white */
+::selection {
+  background-color: #28a745; /* green */
+  color: white; /* optional: change text color */
+}
+
+/* For Firefox, use ::-moz-selection */
+::-moz-selection {
+  background-color: #28a745;
+  color: white;
+}
+
+
 /* NAV-BAR */
 .navbar {
     max-width: 1200px;

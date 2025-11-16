@@ -18,3 +18,20 @@ window.addEventListener('scroll', () => {
         btn.classList.remove('show');
     }
 });
+
+   document.addEventListener('DOMContentLoaded', function() {
+       // Get the current page filename (e.g., 'index.html')
+       const currentPath = window.location.pathname.split('/').pop();
+       
+       // Select all navigation links
+       const navLinks = document.querySelectorAll('nav ul li a');
+       
+       // Loop through links and add 'active' class if href matches current path
+       navLinks.forEach(link => {
+           const linkPath = link.getAttribute('href');
+           if (linkPath === currentPath) {
+               link.classList.add('active');
+           }
+       });
+   });
+   

@@ -158,6 +158,13 @@ body {
     color: white;
 }
 
+nav ul li a.active {
+    color: rgba(27, 167, 71, 0.959); /* White text for contrast */
+    font-weight: bold; /* Make it bold */
+    
+}
+
+
 /* Responsive: Stack sa mobile */
 @media (max-width: 768px) {
     .main-content {

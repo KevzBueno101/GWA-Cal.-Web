@@ -180,8 +180,17 @@ nav ul li a.active {
     font-weight: bold; /* Make it bold */
     
 }
+/* Footer */
+footer {
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    color: #6b7280;
+}
+/* Footer Icons hover */
 
-
+footer a svg:hover{
+    color: var(--text-color);
+}
 /* Responsive: Stack sa mobile */
 @media (max-width: 768px) {
     .main-content {

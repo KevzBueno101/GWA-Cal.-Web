@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top" >
+    <nav class="navbar sticky-top">
         <span>
-            <h3><img src="icon.ico" alt="logo" height="20px", width="20px">GWACal.</h3>
+            <h3><img src="icon.ico" alt="logo" height="20px" , width="20px">GWACal.</h3>
         </span>
         <button class="hamburger" aria-label="Toggle menu">
             <span></span>
@@ -75,21 +75,37 @@
                 <section id="features" class="mb-4">
                     <h3 class="section-title">Features</h3>
                     <ul>
-                        <li>Scrollable Subject List All added subjects are displayed in a neat, monospaced, aligned
+                        <li>Scrollable Subject List — All added subjects are displayed in a neat, monospaced, aligned
                             list.</li>
-                        <li>Instant GWA Calculation Click Calculate GWA to automatically compute your weighted average.
+                        <li>Instant GWA Calculation — Automatically computes your weighted average based on your input.
                         </li>
-                        <li>Clear All Clears all subjects and resets the resultsI</li>
-                        <li>Modern Dark UI Designed with CustomTkinter for a clean, modern dark-themed interface.</li>
-                        <div class="note mt-3">NEW: Inno Setup Installer A fully packaged Windows installer that:
+                        <li>Clear All Button — Removes all subjects and resets the results.</li>
+                        <li>Modern Dark UI — Built using CustomTkinter for a clean, modern interface.</li>
+
+                        <div class="note mt-3">
+                            <h6>NEW FEATURES (v1.7.0)</h6>
                             <ul>
-                                <li>Creates Start Menu and Desktop shortcuts</li>
-                                <li>Installs to Program Files</li>
-                                <li>Includes an automatic uninstaller</li>
-                                <li>Provides a professional installation experience</li>
+                                <li><strong>Upload Excel</strong> — Import subject, units, and grades directly from an
+                                    Excel file.</li>
+                                <li><strong>Export to Excel</strong> — Save your computed results in a clean Excel file
+                                    for record-keeping.</li>
+                                <li><strong>Info Guide Popup</strong> — Shows a quick guide on how to format your Excel
+                                    file before uploading.</li>
+                                <li><strong>Right-Click Delete</strong> — Delete individual entries directly from the
+                                    subject list using a right-click context menu.</li>
                             </ul>
                         </div>
 
+                        <div class="note mt-3">
+                            <h6>Installer</h6>
+                            <p>Inno Setup installer that provides:</p>
+                            <ul>
+                                <li>Start Menu and Desktop shortcuts</li>
+                                <li>Program Files installation</li>
+                                <li>Automatic uninstaller</li>
+                                <li>A professional installation experience</li>
+                            </ul>
+                        </div>
                     </ul>
                 </section>
                 <section id="formula" class="note mt-3">
@@ -116,37 +132,51 @@
                 <section id="install" class="mb-4">
                     <h3 class="section-title">Download & Installation</h3>
                     <ol>
-                        <li>Download <strong>GWA-Calculator v1.6.1.1 setup.zip</strong> from the top-right button or the
-                            download link.</li>
-                        <li>Extract the ZIP (right-click &gt; Extract All).</li>
-                        <li>Open <code>GWA-Calculator v1.6.1.1 setup.exe</code> from the extracted folder.</li>
-                        <li>If Windows SmartScreen warns: choose <strong>More info &raquo; Run anyway</strong>. This
-                            happens because the app is new and unsigned.</li>
+                        <li>Download <strong>GWA-Calculator v1.7.0 setup.zip</strong>.</li>
+                        <li>Right-click the ZIP → <strong>Extract All</strong>.</li>
+                        <li>Go to → <strong>Download</strong> folder.</li>
+                        <li>Run <code>GWA-Calculator v1.7.0 setup.exe</code> from the extracted folder.</li>
+                        <li>If Windows SmartScreen appears, click <strong>More info → Run anyway</strong>.</li>
                     </ol>
 
                     <div class="note mt-3">
-                        <strong>Pro tip:</strong> If SmartScreen keeps blocking, right-click the .exe &gt; Properties
-                        &gt; check "Unblock" then Run.
+                        <strong>Note:</strong> The SmartScreen warning appears because the app is not code-signed. This
+                        is normal for new software.
                     </div>
                 </section>
-
+                <!-- HOW TO USE (UPDATED) -->
                 <section id="howto" class="mb-4">
                     <h3 class="section-title">How to use</h3>
-                    <p>Follow these steps to compute your GWA.</p>
+                    <p>Follow these steps to compute your GWA:</p>
 
                     <ol>
-                        <li><strong>Launch the app.</strong> The dashboard shows empty fields for subject, units, and
-                            grade.</li>
-                        <li><strong>Enter a subject name, units, and grade.</strong> Repeat for each subject.</li>
-                        <li><strong>Click <em>Calculate GWA</em>.</strong> The app will display your calculated GWA
-                            instantly.</li>
-                        <li><strong>Save or clear entries.</strong> Use Clear to reset the form.</li>
+                        <li><strong>Launch the app.</strong> You will see fields for subject name, units, and grade.
+                        </li>
+
+                        <li><strong>Add subjects manually</strong>
+                            Type the subject name, units, and grade then click <em>Add</em>.
+                        </li>
+
+                        <li><strong>Or import an Excel file</strong>
+                            Click <strong>Upload Excel</strong> and select your spreadsheet.
+                            Use the <strong>Info Guide</strong> button to see required formatting.
+                        </li>
+
+                        <li><strong>Right-click entries to delete</strong>
+                            You can now remove individual subjects by right-clicking an item in the list.
+                        </li>
+
+                        <li><strong>Click “Calculate GWA”.</strong>
+                            The weighted average will instantly appear on screen.
+                        </li>
+
+                        <li><strong>Optional: Export results</strong>
+                            Save your GWA and subject list by clicking <strong>Export to Excel</strong>.
+                        </li>
+
+                        <li><strong>Clear All</strong> to reset everything.</li>
                     </ol>
-
                 </section>
-
-
-
                 <section id="troubleshoot" class="mb-4">
                     <h3 class="section-title">Troubleshooting</h3>
                     <h6>SmartScreen / "Isn't commonly downloaded" warning</h6>
@@ -179,14 +209,22 @@
                         <dd class="mb-2">Planned — CSV import/export is on the roadmap.</dd>
                     </dl>
                 </section>
-
+                <!-- CHANGELOG (UPDATED) -->
                 <section id="changelog" class="mb-4">
                     <h3 class="section-title">Changelog</h3>
                     <ul>
-                        <li><strong>v1.6.1.1</strong> — Added "Update Data" feature to allow editing existing records without losing previous entries</li>
+                        <li><strong>v1.7.0</strong> — New Features
+                            <ul>
+                                <li>Added Excel Upload</li>
+                                <li>Added Export to Excel</li>
+                                <li>Added Info Guide popup</li>
+                                <li>Added right-click delete in subject list</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>v1.6.1.1</strong> — Added “Update Data” feature for editing existing entries.</li>
                     </ul>
                 </section>
-
                 <section id="support" class="mb-4">
                     <h3 class="section-title">Support</h3>
                     <p>For bug reports and feature requests, please open an issue on the GitHub repository or contact <a
@@ -224,7 +262,8 @@
                     </a>
                 </li>
             </ul>
-            <small>&copy; 2025 Kevin B. Bueno</small>
+            <small>&copy; 2025 Kevin B. Bueno — Version <strong>v1.7.0</strong></small>
+
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -145,7 +145,7 @@ body {
 }
 
 .app-image {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 30px var(--box-shadow);

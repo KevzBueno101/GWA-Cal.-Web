@@ -31,7 +31,6 @@
             <li><a href="how.html"><i class="fa-solid fa-question"></i> How it Works</a></li>
             <li><a href="documentation.html"><i class="fa-solid fa-book"></i> Documentation</a></li>
             <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
-            
         </ul>
     </nav>
 
@@ -62,9 +61,14 @@
                 <i class="fa-solid fa-plus"></i> Add Subject
             </button>
 
-            <button class="btn-calculate" onclick="calculateGWA()">
-                <i class="fa-solid fa-calculator"></i> Calculate GWA
-            </button>
+            <div class="button-group">
+                <button class="btn-calculate" onclick="calculateGWA()">
+                    <i class="fa-solid fa-calculator"></i> Calculate GWA
+                </button>
+                <button class="btn-reset" onclick="resetCalculator()">
+                    <i class="fa-solid fa-rotate-right"></i> Reset
+                </button>
+            </div>
 
             <div class="result-box" id="resultBox">
                 <h2>Your General Weighted Average</h2>
@@ -141,6 +145,22 @@
             document.getElementById('gwaDisplay').textContent = gwa.toFixed(2);
             document.getElementById('totalUnits').textContent = `Total Units: ${totalUnits.toFixed(1)}`;
             document.getElementById('resultBox').classList.add('show');
+        }
+
+        function resetCalculator() {
+            // Clear all subject rows except the first one
+            const container = document.getElementById('subjectsContainer');
+            const firstRow = container.querySelector('.subject-row');
+            container.innerHTML = '';
+            container.appendChild(firstRow);
+            
+            // Clear inputs in the first row
+            firstRow.querySelector('.subject-name').value = '';
+            firstRow.querySelector('.grade').value = '';
+            firstRow.querySelector('.units').value = '';
+            
+            // Hide result box
+            document.getElementById('resultBox').classList.remove('show');
         }
     </script>
 </body>
